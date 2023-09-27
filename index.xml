@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Khaled Hossain</title>
-    <link>https://khaled2049.github.io/hugo-blog/</link>
+    <link>/</link>
     <description>Recent content on Khaled Hossain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2023 19:14:23 -0600</lastBuildDate><atom:link href="https://khaled2049.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 19:14:23 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>https://khaled2049.github.io/hugo-blog/docs/test/</link>
+      <link>/docs/test/</link>
       <pubDate>Tue, 26 Sep 2023 19:14:23 -0600</pubDate>
       
-      <guid>https://khaled2049.github.io/hugo-blog/docs/test/</guid>
+      <guid>/docs/test/</guid>
       <description>This is a test page Update the test.md</description>
     </item>
     
