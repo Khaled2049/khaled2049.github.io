@@ -24,7 +24,7 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -48,9 +48,10 @@ params:
   #   safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Khaled Hossain"
     icon: /apple-touch-icon.png
     iconHeight: 35
+    url: / # if not set, it will be automatically set to baseURL
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
@@ -88,10 +89,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -103,20 +104,17 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+# menu:
+#   main:
+#     - identifier: categories
+#       name: Categories
+#       url: /categories/
+#       weight: 10
+#     - identifier: tags
+#       name: Tags
+#       url: /tags/
+#       weight: 20
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
