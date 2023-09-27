@@ -1,4 +1,4 @@
-baseURL: "https://khaled2049.github.io/hugo-blog/"
+# baseURL: "https://khaled2049.github.io/hugo-blog/"
 languageCode: en-us
 title: Khaled Hossain
 theme: "PaperMod"
