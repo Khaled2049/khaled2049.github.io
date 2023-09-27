@@ -1,4 +1,4 @@
-baseURL:
+baseURL: "https://khaled2049.github.io/hugo-blog/"
 languageCode: en-us
 title: My New Hugo Site
 theme: "PaperMod"
