@@ -1,16 +1,12 @@
 ---
 author: "Khaled Hossain"
 title: "How to create and activate a virtual environment in python?"
-date: "2023-10-17"
+date: 2023-10-07T18:06:32-06:00
+draft: false
 description: "How to create and activate a virtual environment in python"
 FAtags: ["python", "tutorial"]
 FAcategories: ["python", "tutorial"]
-FAseries: ["Guide"]
-ShowToc: true
-TocOpen: true
-weight: 2
 ---
-<!--more-->
 
 ## Follow these steps to create a virtual environment in python.
 
