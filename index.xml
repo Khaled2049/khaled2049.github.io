@@ -26,22 +26,21 @@
     </item>
     
     <item>
+      <title>Top Tree problems</title>
+      <link>/posts/tree/</link>
+      <pubDate>Sat, 07 Oct 2023 18:06:32 -0600</pubDate>
+      
+      <guid>/posts/tree/</guid>
+      <description>Tree problems problems from leetcode</description>
+    </item>
+    
+    <item>
       <title>Two Pointers</title>
       <link>/posts/twopointers/</link>
       <pubDate>Sat, 07 Oct 2023 18:06:32 -0600</pubDate>
       
       <guid>/posts/twopointers/</guid>
       <description>Two pointers problems from leetcode</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/posts/tree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/tree/</guid>
-      <description>Top Tree problems 199. Binary Tree Right Side View Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Tree: [1, [2, [null, 5]], 3, [null, 4]]
-This problem is fairly simple to solve, the key thing rember for this is the BFS traversal, whenever we think of BFS we think of queue&amp;rsquo;s and popping from the left and appending the children to the right.</description>
     </item>
     
   </channel>
