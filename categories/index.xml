@@ -2,25 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Intro to ML</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://khaled2049.github.io/categories/</link>
     <description>Recent content in Categories on Intro to ML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Khaled Hossain; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://khaled2049.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Syntax</title>
-      <link>http://localhost:1313/categories/syntax/</link>
+      <title>Machine-Learning</title>
+      <link>https://khaled2049.github.io/categories/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Themes</title>
-      <link>http://localhost:1313/categories/themes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/themes/</guid>
+      <guid>https://khaled2049.github.io/categories/machine-learning/</guid>
       <description></description>
     </item>
   </channel>
