@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ML | BLOG | Khaled</title>
-    <link>https://khaled2049.github.io/</link>
-    <description>Recent content on ML | BLOG | Khaled</description>
+    <title>Intro to ML</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Intro to ML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://khaled2049.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2024, Khaled Hossain; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Code Syntax Guide</title>
-      <link>https://khaled2049.github.io/posts/one/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://khaled2049.github.io/posts/one/</guid>
-      <description>Sample article showcasing basic code syntax and formatting for HTML elements.</description>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Welcome to my blog! I&amp;rsquo;m Khaled, a software engineer with a deep passion for outdoor adventures, and continuous learning. Here, I share my journey, insights, and the exciting things I&amp;rsquo;ve learned.&#xA;A Bit About My Journey I graduated from the University of Colorado Boulder with a Master&amp;rsquo;s degree in Computer Science. During my time there, I delved into the depths of algorithms, data structures, and the fascinating world of machine learning.</description>
+    </item>
+    <item>
+      <title>How I would learn the basics of ML in 10 days</title>
+      <link>http://localhost:1313/posts/one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/one/</guid>
+      <description>Learn Machine learning basics in 10 days</description>
     </item>
   </channel>
 </rss>

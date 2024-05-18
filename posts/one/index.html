@@ -30,12 +30,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <html
   class="not-ready lg:text-base"
-  style="--bg: #faf8f1"
+  style="--bg: #fbfbfb"
   lang="en-us"
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -44,7 +56,7 @@
   />
 
   
-  <title>Code Syntax Guide - ML | BLOG | Khaled</title>
+  <title>How I would learn the basics of ML in 10 days - Intro to ML</title>
 
   
   <meta name="theme-color" />
@@ -53,8 +65,8 @@
   
   
   
-  <meta name="description" content="Sample article showcasing basic code syntax and formatting for HTML elements." />
-  <meta name="author" content="[Aditya Telange]" />
+  <meta name="description" content="Learn Machine learning basics in 10 days" />
+  <meta name="author" content="[Khaled Hossain]" />
   
 
   
@@ -63,22 +75,28 @@
   
   
   
-  <link rel="preload stylesheet" as="style" href="https://khaled2049.github.io/main.min.css" />
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
   
   
   
   
-  <link rel="preload" as="image" href="https://khaled2049.github.io/theme.png" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
   
   
   
   
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/6b4f6b6f1d41b93a8012270fd37916fd?s=160&amp;d=identicon" />
+  
   
 
   
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
   
   
 
@@ -86,7 +104,7 @@
   
   <script
     defer
-    src="https://khaled2049.github.io/highlight.min.js"
+    src="http://localhost:1313/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
   
@@ -96,50 +114,13 @@
   
 
   
-  <link rel="icon" href="https://khaled2049.github.io/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://khaled2049.github.io/apple-touch-icon.png" />
+  <link rel="icon" href="http://localhost:1313/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png" />
 
   
   <meta name="generator" content="Hugo 0.125.7">
 
   
-  
-  
-  
-  
-
-
-  
-  
-  <meta itemprop="name" content="Code Syntax Guide">
-  <meta itemprop="description" content="Sample article showcasing basic code syntax and formatting for HTML elements.">
-  <meta itemprop="datePublished" content="2019-03-10T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2019-03-10T00:00:00+00:00">
-  <meta itemprop="wordCount" content="294">
-  <meta itemprop="keywords" content="Markdown,Syntax,Code,Gist">
-  
-  <meta property="og:url" content="https://khaled2049.github.io/posts/one/">
-  <meta property="og:site_name" content="ML | BLOG | Khaled">
-  <meta property="og:title" content="Code Syntax Guide">
-  <meta property="og:description" content="Sample article showcasing basic code syntax and formatting for HTML elements.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2019-03-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2019-03-10T00:00:00+00:00">
-    <meta property="article:tag" content="Markdown">
-    <meta property="article:tag" content="Syntax">
-    <meta property="article:tag" content="Code">
-    <meta property="article:tag" content="Gist">
-
-  
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Code Syntax Guide">
-<meta name="twitter:description" content="Sample article showcasing basic code syntax and formatting for HTML elements.">
-
-  
-  
-  
-  <link rel="canonical" href="https://khaled2049.github.io/posts/one/" />
   
   
 </head>
@@ -149,8 +130,8 @@
   <div class="relative z-50 mr-auto flex items-center">
     <a
       class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
-      href="https://khaled2049.github.io/"
-      >ML | BLOG | Khaled</a
+      href="http://localhost:1313/"
+      >Intro to ML</a
     >
     <div
       class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
@@ -182,7 +163,7 @@
 
     
     const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const lightBg = '#fbfbfb'.replace(/"/g, '');
     const setDark = (isDark) => {
       metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
       htmlClass[isDark ? 'add' : 'remove']('dark');
@@ -215,7 +196,49 @@
   >
     
     
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
 
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Khaled2049"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/khaledhossainn/"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+    </nav>
     
   </div>
 </header>
@@ -228,176 +251,195 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Code Syntax Guide</h1>
+    <h1 class="!my-0 pb-2.5">How I would learn the basics of ML in 10 days</h1>
 
     
     <div class="text-sm antialiased opacity-60">
-      
-      <time>Mar 10, 2019</time>
       
       
       
       
       <span class="mx-1">&middot;</span>
-      <span>[Aditya Telange]</span>
+      <span>[Khaled Hossain]</span>
       
     </div>
     
   </header>
 
-  <section><h3 id="inline-code">Inline Code</h3>
-<p>This is a test
-<code>This is Inline Code</code></p>
-<h3 id="only-pre">Only <code>pre</code></h3>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h3 id="code-block-with-backticks">Code block with backticks</h3>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&#34;utf-8&#34; /&gt;
-    &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-    &lt;meta
-      name=&#34;description&#34;
-      content=&#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;
-    /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Test&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h3 id="code-block-with-backticks-and-language-specified">Code block with backticks and language specified</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;</span>
-</span></span><span style="display:flex;"><span>    /&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><h3 id="code-block-with-backticks-and-language-specified-with-line-numbers">Code block with backticks and language specified with line numbers</h3>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;</span>
-</span></span><span style="display:flex;"><span>    /&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="code-block-with-line-numbers-and-markhighlightedmark-lines">Code block with line numbers and <!-- raw HTML omitted -->highlighted<!-- raw HTML omitted --> lines</h3>
+  <section><p>Welcome to the 10-Day Machine Learning Plan! This syllabus is designed to guide you through the fundamentals of machine learning, with a project at the end of each day to reinforce what you&rsquo;ve learned.</p>
+<h2 id="day-1-introduction-to-machine-learning">Day 1: Introduction to Machine Learning</h2>
 <ul>
-<li>PaperMod supports <code>linenos=true</code> or <code>linenos=table</code></li>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>What is Machine Learning?</li>
+<li>Types of Machine Learning: Supervised, Unsupervised, Reinforcement Learning</li>
+<li>Basic Terminologies: Dataset, Features, Labels, Training, Testing</li>
+<li>Setting up the Environment: Installing Python, Jupyter Notebook, and essential libraries (NumPy, Pandas, Matplotlib, Scikit-Learn)</li>
 </ul>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex; background-color:#3c3d38"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span>
-</span></span><span style="display:flex; background-color:#3c3d38"><span>      <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;</span>
-</span></span><span style="display:flex;"><span>    /&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li><!-- raw HTML omitted -->With <code>linenos=inline</code> line <!-- raw HTML omitted --><strong>might not</strong> get highlighted<!-- raw HTML omitted --> properly.<!-- raw HTML omitted --></li>
-<li>This issue is fixed with <a href="https://github.com/adityatelange/hugo-PaperMod/commit/045c08496d61b1b3f9c79e69e7d3d243a526d8f3">045c084</a></li>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Implement a simple linear regression model using Scikit-Learn on a synthetic dataset.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex; background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  &lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    &lt;<span style="color:#f92672">meta</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>      <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span>
-</span></span><span style="display:flex; background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>      <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    /&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  &lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  &lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>  &lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h3>
-<pre><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
-<h3 id="github-gist">Github Gist</h3>
-<script src="https://gist.github.com/adityatelange/376cd56ee2c94aaa2e8b93200f2ba8b5.js"></script>
-
+</li>
+</ul>
+<h2 id="day-2-data-preprocessing">Day 2: Data Preprocessing</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Data Cleaning: Handling missing values, removing duplicates</li>
+<li>Data Transformation: Scaling, Normalization</li>
+<li>Feature Engineering: Creating new features, encoding categorical data</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Preprocess the Titanic dataset and prepare it for machine learning modeling.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-3-exploratory-data-analysis-eda">Day 3: Exploratory Data Analysis (EDA)</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Descriptive Statistics</li>
+<li>Data Visualization: Histograms, Scatter Plots, Box Plots</li>
+<li>Correlation Analysis</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Perform EDA on the Iris dataset and summarize the key insights using visualizations.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-4-supervised-learning---classification">Day 4: Supervised Learning - Classification</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Introduction to Classification</li>
+<li>Logistic Regression, K-Nearest Neighbors (KNN)</li>
+<li>Model Evaluation: Confusion Matrix, Accuracy, Precision, Recall, F1-Score</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Build a classifier to predict whether a person has diabetes using the Pima Indians Diabetes dataset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-5-supervised-learning---regression">Day 5: Supervised Learning - Regression</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Introduction to Regression</li>
+<li>Linear Regression, Polynomial Regression</li>
+<li>Model Evaluation: Mean Absolute Error, Mean Squared Error, R² Score</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Build a regression model to predict house prices using the Boston Housing dataset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-6-unsupervised-learning---clustering">Day 6: Unsupervised Learning - Clustering</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Introduction to Clustering</li>
+<li>K-Means Clustering, Hierarchical Clustering</li>
+<li>Evaluating Clustering Performance: Elbow Method, Silhouette Score</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Apply K-Means clustering to segment customers based on their spending behavior using the Mall Customers dataset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-7-unsupervised-learning---dimensionality-reduction">Day 7: Unsupervised Learning - Dimensionality Reduction</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Introduction to Dimensionality Reduction</li>
+<li>Principal Component Analysis (PCA)</li>
+<li>Applications of PCA</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Use PCA to reduce the dimensionality of the Wine dataset and visualize the results.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-8-ensemble-methods">Day 8: Ensemble Methods</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Introduction to Ensemble Learning</li>
+<li>Bagging: Random Forest</li>
+<li>Boosting: Gradient Boosting, AdaBoost</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Build a Random Forest classifier to predict breast cancer using the Breast Cancer Wisconsin dataset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-9-model-tuning-and-optimization">Day 9: Model Tuning and Optimization</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Hyperparameter Tuning: Grid Search, Random Search</li>
+<li>Cross-Validation</li>
+<li>Handling Overfitting and Underfitting</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Tune hyperparameters of a Support Vector Machine (SVM) classifier to improve performance on the MNIST dataset.</li>
+</ul>
+</li>
+</ul>
+<h2 id="day-10-introduction-to-neural-networks">Day 10: Introduction to Neural Networks</h2>
+<ul>
+<li>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>Basics of Neural Networks</li>
+<li>Introduction to TensorFlow and Keras</li>
+<li>Building and Training a Neural Network</li>
+</ul>
+</li>
+<li>
+<p><strong>Project:</strong></p>
+<ul>
+<li>Build and train a simple neural network to classify handwritten digits using the MNIST dataset.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Each day is structured to build upon the knowledge from the previous day. By the end of this bootcamp, you will have a solid foundation in machine learning and hands-on experience with various projects and datasets.</p>
 </section>
 
   
@@ -406,26 +448,8 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://khaled2049.github.io/tags/markdown"
-      >markdown</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://khaled2049.github.io/tags/syntax"
-      >syntax</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://khaled2049.github.io/tags/code"
-      >code</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://khaled2049.github.io/tags/gist"
-      >gist</a
+      href="http://localhost:1313/tags/ml"
+      >ml</a
     >
     
   </footer>
@@ -457,7 +481,7 @@
 >
   <div class="mr-auto">
     &copy; 2024
-    <a class="link" href="https://khaled2049.github.io/">ML | BLOG | Khaled</a>
+    <a class="link" href="http://localhost:1313/">Intro to ML</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >Powered by Hugo️️</a

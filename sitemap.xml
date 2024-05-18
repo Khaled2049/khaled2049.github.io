@@ -2,37 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://khaled2049.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/tags/code/</loc>
+    <loc>http://localhost:1313/tags/code/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/posts/one/</loc>
+    <loc>http://localhost:1313/posts/one/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/tags/gist/</loc>
+    <loc>http://localhost:1313/tags/gist/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/tags/markdown/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/tags/syntax/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/categories/syntax/</loc>
+    <loc>http://localhost:1313/tags/syntax/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/tags/</loc>
+    <loc>http://localhost:1313/categories/syntax/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://khaled2049.github.io/categories/themes/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/themes/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/themes-guide/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
 </urlset>
