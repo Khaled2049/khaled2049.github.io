@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Khaled2049 Blog</title>
-    <link>http://Khaled2049.github.io/posts/</link>
-    <description>Recent content in Posts on Khaled2049 Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 13 Aug 2024 09:40:19 -0600</lastBuildDate><atom:link href="http://Khaled2049.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <title>Posts on Khaled2049&#39;s Blog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Khaled2049&#39;s Blog</description>
+    <image>
+      <title>Khaled2049&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.132.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Aug 2024 11:06:16 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Novelsync Investor Updates</title>
-      <link>http://Khaled2049.github.io/posts/novelsync-investor-updates/</link>
-      <pubDate>Tue, 13 Aug 2024 09:40:19 -0600</pubDate>
-      
-      <guid>http://Khaled2049.github.io/posts/novelsync-investor-updates/</guid>
-      <description>Hi everybody! I&amp;rsquo;m planning to start giving updates on my first start up over here!</description>
+      <title>Novel Sync Investor Update</title>
+      <link>http://localhost:1313/posts/novel-sync-investor-update/</link>
+      <pubDate>Tue, 13 Aug 2024 11:06:16 -0600</pubDate>
+      <guid>http://localhost:1313/posts/novel-sync-investor-update/</guid>
+      <description>Hi everybody! I&amp;rsquo;ll be using this give updates on NovelSync!</description>
     </item>
-    
   </channel>
 </rss>
