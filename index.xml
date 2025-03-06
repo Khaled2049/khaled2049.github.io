@@ -9,10 +9,18 @@
       <url>https://khaled2049.github.io/images/papermod-cover.png</url>
       <link>https://khaled2049.github.io/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.132.1</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Feb 2025 20:29:30 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 06 Mar 2025 12:29:43 -0800</lastBuildDate>
     <atom:link href="https://khaled2049.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to do an AWS blue green deployment without downtime</title>
+      <link>https://khaled2049.github.io/posts/blue-green-deployment/</link>
+      <pubDate>Thu, 06 Mar 2025 12:29:43 -0800</pubDate>
+      <guid>https://khaled2049.github.io/posts/blue-green-deployment/</guid>
+      <description>AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.
+In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime.</description>
+    </item>
     <item>
       <title>Novel Sync Investor Update Two</title>
       <link>https://khaled2049.github.io/posts/novel-sync-investor-update-two/</link>

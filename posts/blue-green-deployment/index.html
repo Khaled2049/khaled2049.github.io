@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Novel Sync Investor Update Two | Khaled2049&#39;s Blog</title>
+<title>How to do an AWS blue green deployment without downtime | Khaled2049&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="State of Novel Sync as of 2/17/2025 Okay, so I know haven&rsquo;t been giving plenty of updates here, and I honestly have no excuses. I&rsquo;ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I&rsquo;ve added all the main features, I&rsquo;ll focus on polishing it and writing about what I&rsquo;ve learned.">
+<meta name="description" content="AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.
+In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime.">
 <meta name="author" content="Khaled Hossain">
-<link rel="canonical" href="https://khaled2049.github.io/posts/novel-sync-investor-update-two/">
+<link rel="canonical" href="https://khaled2049.github.io/posts/blue-green-deployment/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://khaled2049.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://khaled2049.github.io/favicon-16x16.png">
@@ -18,7 +19,7 @@
 <link rel="mask-icon" href="https://khaled2049.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://khaled2049.github.io/posts/novel-sync-investor-update-two/">
+<link rel="alternate" hreflang="en" href="https://khaled2049.github.io/posts/blue-green-deployment/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,19 +59,21 @@
 </noscript>
   
 
-<meta property="og:title" content="Novel Sync Investor Update Two" />
-<meta property="og:description" content="State of Novel Sync as of 2/17/2025 Okay, so I know haven&rsquo;t been giving plenty of updates here, and I honestly have no excuses. I&rsquo;ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I&rsquo;ve added all the main features, I&rsquo;ll focus on polishing it and writing about what I&rsquo;ve learned." />
+<meta property="og:title" content="How to do an AWS blue green deployment without downtime" />
+<meta property="og:description" content="AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.
+In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://khaled2049.github.io/posts/novel-sync-investor-update-two/" />
+<meta property="og:url" content="https://khaled2049.github.io/posts/blue-green-deployment/" />
 <meta property="og:image" content="https://khaled2049.github.io/images/papermod-cover.png" />
 <meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-02-17T20:29:30-07:00" />
-<meta property="article:modified_time" content="2025-02-17T20:29:30-07:00" />
+<meta property="article:published_time" content="2025-03-06T12:29:43-08:00" />
+<meta property="article:modified_time" content="2025-03-06T12:29:43-08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://khaled2049.github.io/images/papermod-cover.png" />
-<meta name="twitter:title" content="Novel Sync Investor Update Two"/>
-<meta name="twitter:description" content="State of Novel Sync as of 2/17/2025 Okay, so I know haven&rsquo;t been giving plenty of updates here, and I honestly have no excuses. I&rsquo;ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I&rsquo;ve added all the main features, I&rsquo;ll focus on polishing it and writing about what I&rsquo;ve learned."/>
+<meta name="twitter:title" content="How to do an AWS blue green deployment without downtime"/>
+<meta name="twitter:description" content="AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.
+In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime."/>
 
 
 <script type="application/ld+json">
@@ -87,8 +90,8 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Novel Sync Investor Update Two",
-      "item": "https://khaled2049.github.io/posts/novel-sync-investor-update-two/"
+      "name": "How to do an AWS blue green deployment without downtime",
+      "item": "https://khaled2049.github.io/posts/blue-green-deployment/"
     }
   ]
 }
@@ -97,24 +100,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Novel Sync Investor Update Two",
-  "name": "Novel Sync Investor Update Two",
-  "description": "State of Novel Sync as of 2/17/2025 Okay, so I know haven\u0026rsquo;t been giving plenty of updates here, and I honestly have no excuses. I\u0026rsquo;ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I\u0026rsquo;ve added all the main features, I\u0026rsquo;ll focus on polishing it and writing about what I\u0026rsquo;ve learned.",
+  "headline": "How to do an AWS blue green deployment without downtime",
+  "name": "How to do an AWS blue green deployment without downtime",
+  "description": "AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.\nIn this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime.",
   "keywords": [
     
   ],
-  "articleBody": "State of Novel Sync as of 2/17/2025 Okay, so I know haven’t been giving plenty of updates here, and I honestly have no excuses. I’ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I’ve added all the main features, I’ll focus on polishing it and writing about what I’ve learned. Maybe I’ll even finally write my first story.\nAnother idea I’ve been considering is using Ollama to run the ML logic locally to see how that works. That should be an interesting experiment. Right now, I’m working on the crypto aspect, which has been really exciting. When I first saw my transaction on the blockchain, it felt incredible. I’ve implemented most of the features I envisioned: a home feed for posts, real-time messaging in book clubs, nested feedback (like Reddit) under stories, and blockchain integration. I still need to implement infinite scrolling properly, and the ML part that creates the context for better responses is missing. Once that’s in place, I’ll be able to start creating actual content, and things will get really nice. I also need to start adding tests; I believe a good production app needs tests otherwise, it just feels like a toy project.\nSo yeah that’s basically it. I hope my next post won’t have to wait until next year.\n",
-  "wordCount" : "249",
+  "articleBody": "AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.\nIn this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime. The primary reason for this upgrade was our need for logical replication. We regularly sync our database with Snowflake, but due to how deletions were handled, some records would persist in queries even after being deleted from the source database.\nOur Fivetran connector was configured to use the XMIN incremental update method, which does not support syncing deleted rows in incremental syncs. This limitation made logical replication essential for ensuring accurate data synchronization.\nFrom the Fivetran documentation: “The XMIN method is based on the hidden xmin system column that is present in all PostgreSQL tables. With XMIN, Fivetran must scan every table in full to detect updated data. We do not recommend XMIN for near real-time data needs because XMIN replication is slower than logical replication and doesn’t allow Fivetran to detect deleted rows.”\nFivetran’s recommended approach for efficient data syncing is logical replication. This method performs an initial load of the source table’s data and then continuously replicates ongoing changes—including deletions. However, logical replication is only supported in PostgreSQL 16+, making our upgrade essential.\nHow to Perform the Upgrade with Minimal Risk and Zero Downtime To achieve a seamless transition, I followed a blue-green deployment strategy to minimize disruptions. There might be other ways to approach this, but for our use case, this method worked effectively.\nFollow these steps for each environment (e.g., DEV, UAT, and PROD):\nCreate a snapshot of the existing database. This serves as a backup in case of any issues during the upgrade process. Set up a new cluster in parallel with the existing database. The new cluster should be created from the snapshot, using the same engine version as the snapshot. Ensure it has the same username and password for authentication consistency. The DBClusterIdentifier will be different from the original. Perform an incremental upgrade: First, upgrade the database from PostgreSQL 14 to 15. Upgrade the database from PostgreSQL 15 to 16. Configure logical replication: During the second deployment, create a DB cluster parameter group and set logical replication to 1. Execute the final cutover deployment: Update the secrets to point to the new cluster, ensuring a smooth transition without downtime. By following this approach, we successfully upgraded our AWS RDS cluster while maintaining data integrity and minimizing disruptions. If you’re facing a similar upgrade challenge, this method provides a structured way to execute it safely.\n",
+  "wordCount" : "476",
   "inLanguage": "en",
-  "image": "https://khaled2049.github.io/images/papermod-cover.png","datePublished": "2025-02-17T20:29:30-07:00",
-  "dateModified": "2025-02-17T20:29:30-07:00",
+  "image": "https://khaled2049.github.io/images/papermod-cover.png","datePublished": "2025-03-06T12:29:43-08:00",
+  "dateModified": "2025-03-06T12:29:43-08:00",
   "author":{
     "@type": "Person",
     "name": "Khaled Hossain"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://khaled2049.github.io/posts/novel-sync-investor-update-two/"
+    "@id": "https://khaled2049.github.io/posts/blue-green-deployment/"
   },
   "publisher": {
     "@type": "Organization",
@@ -203,9 +206,9 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://khaled2049.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://khaled2049.github.io/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      Novel Sync Investor Update Two
+      How to do an AWS blue green deployment without downtime
     </h1>
-    <div class="post-meta"><span title='2025-02-17 20:29:30 -0700 -0700'>February 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Khaled Hossain
+    <div class="post-meta"><span title='2025-03-06 12:29:43 -0800 PST'>March 6, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Khaled Hossain
 
 </div>
   </header> <div class="toc">
@@ -216,17 +219,63 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#state-of-novel-sync-as-of-2172025" aria-label="State of Novel Sync as of 2/17/2025">State of Novel Sync as of 2/17/2025</a>
+                    <a href="#aws-rds-blue-green-deployment-for-major-version-upgrade" aria-label="AWS RDS Blue-Green Deployment for Major Version Upgrade">AWS RDS Blue-Green Deployment for Major Version Upgrade</a><ul>
+                        
+                <li>
+                    <a href="#from-the-fivetran-documentation" aria-label="From the Fivetran documentation:">From the Fivetran documentation:</a></li>
+                <li>
+                    <a href="#how-to-perform-the-upgrade-with-minimal-risk-and-zero-downtime" aria-label="How to Perform the Upgrade with Minimal Risk and Zero Downtime">How to Perform the Upgrade with Minimal Risk and Zero Downtime</a>
                 </li>
+            </ul>
+            </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h1 id="state-of-novel-sync-as-of-2172025">State of Novel Sync as of 2/17/2025<a hidden class="anchor" aria-hidden="true" href="#state-of-novel-sync-as-of-2172025">#</a></h1>
-<p>Okay, so I know haven&rsquo;t been giving plenty of updates here, and I honestly have no excuses. I&rsquo;ve been working on novel-sync and adding features left and right. There’s still a lot to improve and polish, but by the end of this year, I expect this project to be pretty solid. My current goal is simply to keep enhancing it. Once I&rsquo;ve added all the main features, I&rsquo;ll focus on polishing it and writing about what I&rsquo;ve learned. Maybe I&rsquo;ll even finally write my first story.</p>
-<p>Another idea I&rsquo;ve been considering is using Ollama to run the ML logic locally to see how that works. That should be an interesting experiment. Right now, I&rsquo;m working on the crypto aspect, which has been really exciting. When I first saw my transaction on the blockchain, it felt incredible. I&rsquo;ve implemented most of the features I envisioned: a home feed for posts, real-time messaging in book clubs, nested feedback (like Reddit) under stories, and blockchain integration. I still need to implement infinite scrolling properly, and the ML part that creates the context for better responses is missing. Once that&rsquo;s in place, I&rsquo;ll be able to start creating actual content, and things will get really nice. I also need to start adding tests; I believe a good production app needs tests otherwise, it just feels like a toy project.</p>
-<p>So yeah that&rsquo;s basically it. I hope my next post won&rsquo;t have to wait until next year.</p>
+  <div class="post-content"><h1 id="aws-rds-blue-green-deployment-for-major-version-upgrade">AWS RDS Blue-Green Deployment for Major Version Upgrade<a hidden class="anchor" aria-hidden="true" href="#aws-rds-blue-green-deployment-for-major-version-upgrade">#</a></h1>
+<p>One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.</p>
+<p>In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime. The primary reason for this upgrade was our need for logical replication. We regularly sync our database with Snowflake, but due to how deletions were handled, some records would persist in queries even after being deleted from the source database.</p>
+<p>Our Fivetran connector was configured to use the XMIN incremental update method, which does not support syncing deleted rows in incremental syncs. This limitation made logical replication essential for ensuring accurate data synchronization.</p>
+<h2 id="from-the-fivetran-documentation">From the Fivetran documentation:<a hidden class="anchor" aria-hidden="true" href="#from-the-fivetran-documentation">#</a></h2>
+<p><quote>&ldquo;The <b>XMIN</b> method is based on the hidden xmin system column that is present in all PostgreSQL tables. With XMIN, Fivetran must scan every table in full to detect updated data. We do not recommend XMIN for near real-time data needs because XMIN replication is slower than logical replication and doesn&rsquo;t allow Fivetran to detect deleted rows.&rdquo;</p>
+<p>Fivetran&rsquo;s recommended approach for efficient data syncing is logical replication. This method performs an initial load of the source table&rsquo;s data and then continuously replicates ongoing changes—including deletions. However, logical replication is only supported in PostgreSQL 16+, making our upgrade essential.</quote></p>
+<h2 id="how-to-perform-the-upgrade-with-minimal-risk-and-zero-downtime">How to Perform the Upgrade with Minimal Risk and Zero Downtime<a hidden class="anchor" aria-hidden="true" href="#how-to-perform-the-upgrade-with-minimal-risk-and-zero-downtime">#</a></h2>
+<p>To achieve a seamless transition, I followed a blue-green deployment strategy to minimize disruptions. There might be other ways to approach this, but for our use case, this method worked effectively.</p>
+<p>Follow these steps for each environment (e.g., DEV, UAT, and PROD):</p>
+<ol>
+<li>Create a snapshot of the existing database.</li>
+</ol>
+<ul>
+<li>This serves as a backup in case of any issues during the upgrade process.</li>
+</ul>
+<ol start="2">
+<li>Set up a new cluster in parallel with the existing database.</li>
+</ol>
+<ul>
+<li>The new cluster should be created from the snapshot, using the same engine version as the snapshot.
+Ensure it has the same username and password for authentication consistency.</li>
+<li>The DBClusterIdentifier will be different from the original.</li>
+</ul>
+<ol start="3">
+<li>Perform an incremental upgrade:</li>
+</ol>
+<ul>
+<li>First, upgrade the database from PostgreSQL 14 to 15.</li>
+<li>Upgrade the database from PostgreSQL 15 to 16.</li>
+<li>Configure logical replication:
+<ul>
+<li>During the second deployment, create a DB cluster parameter group and set logical replication to <code>1</code>.</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>Execute the final cutover deployment:</li>
+</ol>
+<ul>
+<li>Update the secrets to point to the new cluster, ensuring a smooth transition without downtime.</li>
+</ul>
+<p>By following this approach, we successfully upgraded our AWS RDS cluster while maintaining data integrity and minimizing disruptions. If you&rsquo;re facing a similar upgrade challenge, this method provides a structured way to execute it safely.</p>
 
 
   </div>
@@ -235,15 +284,10 @@
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://khaled2049.github.io/posts/blue-green-deployment/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>How to do an AWS blue green deployment without downtime</span>
-  </a>
-  <a class="next" href="https://khaled2049.github.io/posts/my-first-post/">
+  <a class="next" href="https://khaled2049.github.io/posts/novel-sync-investor-update-two/">
     <span class="title">Next »</span>
     <br>
-    <span>Goals</span>
+    <span>Novel Sync Investor Update Two</span>
   </a>
 </nav>
 
