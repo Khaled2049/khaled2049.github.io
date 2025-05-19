@@ -9,16 +9,17 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.132.1</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 May 2025 07:32:50 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 12:29:43 -0800</lastBuildDate>
+    <atom:link href="https://khaled2049.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Moving from GCP to GO server</title>
-      <link>http://localhost:1313/posts/server/</link>
-      <pubDate>Mon, 19 May 2025 07:32:50 -0600</pubDate>
-      <guid>http://localhost:1313/posts/server/</guid>
-      <description>I’ve decided to start moving much of the logic I previously ran on Google Cloud over to a Go (Golang) server. While this shift has added a lot of new work, with the help of AI, I don&amp;rsquo;t think it’ll be a heavy lift.There are several reasons behind this decision. First, since this is a passion project and I&amp;rsquo;m not focused on monetization, I have the freedom to take my time and build it exactly the way I envision.</description>
+      <title>How to do an AWS blue green deployment without downtime</title>
+      <link>https://khaled2049.github.io/posts/blue-green-deployment/</link>
+      <pubDate>Thu, 06 Mar 2025 12:29:43 -0800</pubDate>
+      <guid>https://khaled2049.github.io/posts/blue-green-deployment/</guid>
+      <description>AWS RDS Blue-Green Deployment for Major Version Upgrade One of my first key tasks in my new role was upgrading our AWS RDS cluster from PostgreSQL 14 to 16. When dealing with database upgrades, I always lean toward a cautious approach to minimize risk. Our cluster was running on version 14, and a major version upgrade was required to bring it up to 16.
+In this blog, I’ll walk you through the steps I took to complete this upgrade with minimal risk and zero downtime.</description>
     </item>
     <item>
       <title>Novel Sync Investor Update Two</title>
